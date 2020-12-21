@@ -1,27 +1,3 @@
-lis = [1, 4, 2, 10, 2, 3, 1, 0, 20] 
-subarr = []
-dic = {}
-sumarr = []
-k = 4 #Defining size of subarray
-#Using the brute force approach to compute sum of each subarray of size 3 in the list
-print("Brute Force Approach")
-for i in range(len(lis)-k+1):
-    
-  
-    sum = 0
-    for j in range(i,k):
-        sum = sum + lis[j]
-        subarr.append(lis[j])
-   
-        
-    sumarr.append(sum)
-    dic[sum] = subarr
-    subarr = []
-   
-
-print(dic)
-print("Maximum Sum:",max(sumarr))
-
 '''
 Brute Force Approach
 1+2+3 = 6
@@ -58,22 +34,16 @@ questions is to finding maximum subarray of characters with no repeating charact
 print("Sliding Window Approach")
 
 l = [1, 4, 2, 10, 2, 3, 1, 0, 20] 
-
 #defining the size of the window
-window_size = 4
-#Initializing the sum variable for the sum of 1st Window elements
-res = 0
+k = 4
 #computing the sum for the elements of the first window
-for i in range(window_size):
-    res = res + l[i]
-
-#Initialzing sum variable for finding sum for each window
-curr_sum = 0
+res = sum(l[:k])
+max_sum = res
 
 #Determining the max_sum subarray value
-for i in range(window_size,len(l)):
+for i in range(len(l)-k):
+    res = res-l[i]+l[i+k]
+    max_sum = max(res,max_sum)
+    
 
-    curr_sum = max(res+l[i]-l[i-window_size],sum)
-    res = max(res,curr_sum)
-
-print("Maximum Sum:",res)
+print("Maximum Sum:",max_sum)
