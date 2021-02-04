@@ -9,8 +9,8 @@ def countConstruct(target,words):
     for word in words:
         if target.find(word) == 0:
             suffix = target[len(word):]
-            if countConstruct(suffix,words) == 1:
-                count += 1
+            temp = countConstruct(suffix,words)
+            count += temp
     
     return count
 
@@ -33,8 +33,8 @@ def countConstruct_2(target,words):
     for word in words:
         if target.find(word) == 0:
             suffix = target[len(word):]
-            if countConstruct_2(suffix,words) == 1:
-                count += 1
+            temp = countConstruct_2(suffix,words) 
+            count += temp
     memo[target] = count
     return count
 
