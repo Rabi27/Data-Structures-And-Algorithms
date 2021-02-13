@@ -2,7 +2,7 @@
 stack = [root]
 res = []
 while stack:
-    node = stack.pop(0)
+    node = stack.pop(-1)
     stack.append(node.val)
     if node.right:
         stack.append(node.right)
