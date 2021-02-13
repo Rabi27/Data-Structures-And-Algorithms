@@ -140,9 +140,8 @@ class Node():
                 root = None
                 return temp
     
-            # Node with two children: 
+            # Now solving for Node with two children: 
             # Get the inorder successor
-            # (smallest in the right subtree)
             temp = self.minValueNode(root.right)
     
             # Copy the inorder successor's 
