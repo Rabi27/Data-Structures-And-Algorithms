@@ -16,3 +16,15 @@ a = l.count(2)
 fruits = ['apple', 'banana', 'cherry']
 points = (1, 4, 5, 9)
 fruits.extend(points)
+
+#Insert the value "orange" as the second element of the fruit list:
+fruits = ['apple', 'banana', 'cherry']
+fruits.insert(1, "orange")
+
+#Remove the second element of the fruit list:
+fruits = ['apple', 'banana', 'cherry']
+fruits.pop(1)
+
+#Remove the "banana" element of the fruit list:
+fruits = ['apple', 'banana', 'cherry']
+fruits.remove("banana")
