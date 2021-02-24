@@ -28,3 +28,12 @@ fruits.pop(1)
 #Remove the "banana" element of the fruit list:
 fruits = ['apple', 'banana', 'cherry']
 fruits.remove("banana")
+
+#The index() method returns the position at the first occurrence of the specified value.
+#If the element is not found, a ValueError exception is raised.
+#Arguments passed to the method are:
+#element - the element to be searched
+#start (optional) - start searching from this index
+#end (optional) - search the element up to this index
+fruits = ['apple', 'banana', 'cherry']
+x = fruits.index("cherry")
