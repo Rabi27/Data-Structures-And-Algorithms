@@ -37,3 +37,7 @@ fruits.remove("banana")
 #end (optional) - search the element up to this index
 fruits = ['apple', 'banana', 'cherry']
 x = fruits.index("cherry")
+
+#Remove all elements from the fruits list:
+fruits = ['apple', 'banana', 'cherry', 'orange']
+fruits.clear()
