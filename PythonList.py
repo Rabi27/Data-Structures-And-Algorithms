@@ -33,6 +33,7 @@ fruits.remove("banana")
 #If the element is not found, a ValueError exception is raised.
 #Arguments passed to the method are:
 #element - the element to be searched
+
 #start (optional) - start searching from this index
 #end (optional) - search the element up to this index
 fruits = ['apple', 'banana', 'cherry']
@@ -41,3 +42,16 @@ x = fruits.index("cherry")
 #Remove all elements from the fruits list:
 fruits = ['apple', 'banana', 'cherry', 'orange']
 fruits.clear()
+
+'''
+The copy() method returns a shallow copy of the list.
+
+A list can be copied using the = operator. For example,
+'''
+old_list = [1, 2, 3]
+​new_list = old_list
+'''
+The problem with copying lists in this way is that if you modify new_list, old_list is also modified. 
+It is because the new list is referencing or pointing to the same old_list object.
+
+'''
