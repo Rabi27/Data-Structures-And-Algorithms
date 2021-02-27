@@ -55,3 +55,16 @@ The problem with copying lists in this way is that if you modify new_list, old_l
 It is because the new list is referencing or pointing to the same old_list object.
 
 '''
+old_list = [1, 2, 3]
+new_list = old_list
+
+# add an element to list
+new_list.append('a')
+
+print('New List:', new_list)
+print('Old List:', old_list)
+
+'''
+However, if you need the original list unchanged when the new list is modified, you can use the copy() method.
+'''
+new_list = list.copy()
