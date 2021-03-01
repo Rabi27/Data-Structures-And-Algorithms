@@ -69,3 +69,16 @@ However, if you need the original list unchanged when the new list is modified, 
 '''
 new_list = list.copy()
 #cheat day
+
+'''
+The sort() method sorts the elements of a given list in a specific ascending or descending order.
+
+The syntax of the sort() method is:
+
+list.sort(key=..., reverse=...)
+Alternatively, you can also use Python's built-in sorted() function for the same purpose.
+
+sorted(list, key=..., reverse=...)
+Note: The simplest difference between sort() and sorted() is: sort() changes the list directly and doesn't return any value, while sorted() doesn't change the list and returns the sorted list.
+
+'''
