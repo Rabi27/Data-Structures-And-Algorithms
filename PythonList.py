@@ -80,5 +80,4 @@ Alternatively, you can also use Python's built-in sorted() function for the same
 
 sorted(list, key=..., reverse=...)
 Note: The simplest difference between sort() and sorted() is: sort() changes the list directly and doesn't return any value, while sorted() doesn't change the list and returns the sorted list.
-
 '''
