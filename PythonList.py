@@ -79,5 +79,22 @@ list.sort(key=..., reverse=...)
 Alternatively, you can also use Python's built-in sorted() function for the same purpose.
 
 sorted(list, key=..., reverse=...)
-Note: The simplest difference between sort() and sorted() is: sort() changes the list directly and doesn't return any value, while sorted() doesn't change the list and returns the sorted list.
+Note: The simplest difference between sort() and sorted() is: sort() changes the list directly and doesn't return any value, while sorted() doesn't change the list 
+and returns the sorted list.
+
+sort() Parameters
+By default, sort() doesn't require any extra parameters. However, it has two optional parameters:
+
+reverse - If True, the sorted list is reversed (or sorted in Descending order)
+key - function that serves as a key for the sort comparison
+
+If you want your own implementation for sorting, the sort() method also accepts a key function as an optional parameter.
+
+Based on the results of the key function, you can sort the given list.
+
+list.sort(key=len)
+Alternatively for sorted:
+
+sorted(list, key=len)
+Here, len is the Python's in-built function to count the length of an element.
 '''
